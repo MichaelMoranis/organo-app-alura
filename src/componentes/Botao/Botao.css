@@ -1,0 +1,15 @@
+.btnCard {
+    background-color: #6278F7;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 14px 14px;
+    border: none;
+    border-radius: 8px;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.btnCard:hover {
+    color: #95FFD4;
+}
