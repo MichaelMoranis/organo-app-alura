@@ -8,6 +8,7 @@ import Apresentacao from './componentes/Apresentacao';
 function App() {
   const [times, setTimes ] = useState([
     {
+
     nome: "Programacao",
     corPrimaria: "#57C278",
     corSecundaria: "#D9F7E9"
@@ -46,8 +47,8 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState([]);
 
-  function deletarColaborador() {
-    console.log("deletando colaborador !!!")
+  function deletarColaborador(nome) {
+    setColaboradores(colaboradores.filter(colaborador => colaborador.nome !== nome));
   }
 
   function mudarCorDoTime(cor, nome) {
