@@ -5,7 +5,7 @@ const Apresentacao = () => {
         <>
            <h2 className="titulo__apresentacao">Este eh o Organo !!!</h2>
            <p className="texto__apresentacao">
-            Aqui voce pode adicionar seus pets preferidos digitandos os dados dele e o endereco da sua imagem preferida
+             Preencha os campos com os dados do desenvolvedor desejado !!
            </p>
         </>
     )
