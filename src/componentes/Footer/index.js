@@ -11,7 +11,7 @@ import "./Footer.css"
             <div>
                 <img src="./imagens/logo.png" alt="" />
             </div>                
-            <p>desenvolvido por alura  <br /> em parceria com o Michael Moranis !!</p>
+            <p>desenvolvido por Michael Moranis !!</p>
         </footer>
     )
 }
