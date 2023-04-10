@@ -60,6 +60,10 @@ function App() {
     }))
   }
 
+  function cadastrarTime(novoTime) {
+    setTimes([...times, {...novoTime}])
+  }
+
   const colaboradorAdicionado = (colaborador) => {
 
     setColaboradores([...colaboradores, colaborador])
@@ -68,15 +72,18 @@ function App() {
     <div className="App">
       <Banner />
       <Apresentacao />
-      <Formulario nomesDosTimes={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => colaboradorAdicionado(colaborador)} />
-      {times.map(time => <Time 
-      mudarCor={mudarCorDoTime}
-      key={time.nome} 
-      nome={time.nome} 
-      corPrimaria={time.corPrimaria} 
-      corSecundaria={time.corSecundaria}
-      colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-      aoDeletar={deletarColaborador}
+      <Formulario  
+        cadastrarTime = {cadastrarTime}
+        nomesDosTimes={times.map(time => time.nome)} 
+        aoColaboradorCadastrado={colaborador => colaboradorAdicionado(colaborador)} />
+        {times.map(time => <Time 
+        mudarCor={mudarCorDoTime}
+        key={time.nome} 
+        nome={time.nome} 
+        corPrimaria={time.corPrimaria} 
+        corSecundaria={time.corSecundaria}
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+        aoDeletar={deletarColaborador}
       /> )}
       <Footer />
     </div>

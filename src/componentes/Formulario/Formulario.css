@@ -13,7 +13,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
     .formulario form {
-        width: 90%;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+        /* padding: -4em; */
     }
 }
